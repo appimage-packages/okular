@@ -1,0 +1,134 @@
+name: okular
+packages:
+  - build-essential
+  - libgl1-mesa-dev
+  - software-properties-common
+  - libxcb-xfixes0-dev
+  - autotools-dev
+  - libdbus-1-3
+  - libdbus-1-dev
+  - libxcb1
+  - libxcb1-dev
+  - libx11-xcb1
+  - libx11-xcb-dev
+  - libxcb-keysyms1
+  - libxcb-keysyms1-dev
+  - libxcb-image0
+  - libxcb-image0-dev
+  - libxcb-shm0
+  - libxcb-shm0-dev
+  - libxcb-icccm4
+  - libxcb-icccm4-dev
+  - libxcb-sync-dev
+  - libxcb-xfixes0-dev
+  - libxcb-render-util0
+  - libxcb-render-util0-dev
+  - libxcb-shape0-dev
+  - libxcb-xfixes0-dev
+  - libxcb-randr0-dev
+  - libxrender-dev
+  - libssl-dev
+  - libudev-dev
+  - libwayland0
+  - libxkbcommon-dev
+  - libxkbcommon0
+  - libfontconfig1-dev
+  - libgl1-mesa-dev
+  - libgles2-mesa-dev
+  - libglib2.0-dev
+  - libglu1-mesa-dev
+  - libicu-dev
+  - pkg-config
+  - libatspi2.0-dev
+  - libcups2-dev
+  - libgtk2.0-dev
+  - libmtdev-dev
+  - unixodbc-dev
+  - freetds-dev
+  - libmysqlclient-dev
+  - libxkbfile-dev
+  - libsqlite3-dev
+  - libharfbuzz-dev
+  - libxkbcommon-x11-dev
+  - libasound2-dev
+  - libgstreamer-plugins-base1.0-dev
+  - libgstreamer1.0-dev
+  - libts-dev
+  - libpulse-dev
+  - libproxy-dev
+  - libxss-dev
+  - libsnappy-dev
+  - libsrtp0-dev
+  - libflac++-dev
+  - libopus-dev
+  - libspeex-dev
+  - libjsoncpp-dev
+  - libvpx-dev
+  - re2c
+  - libevent-dev
+  - libopenal-dev
+  - libpq-dev
+  - libsystemd-journal-dev
+  - libxcb-xinerama0-dev
+  - docbook-xml
+  - docbook-xsl
+  - libappstream-dev
+  - libncurses5-dev
+  - flex
+  - bison
+  - libxslt1-dev
+  #app specifc
+frameworks:
+  build_kf5: true
+  frameworks:
+    - extra-cmake-modules
+    - kcoreaddons
+    - ki18n
+    - kitemviews
+    - kconfig
+    - polkit-qt-1
+    - kauth
+    - kcodecs
+    - karchive
+    - kdoctools
+    - kguiaddons
+    - kwidgetsaddons
+    - kconfigwidgets
+    - kiconthemes
+    - kcompletion
+    - kwindowsystem
+    - kcrash
+    - kdbusaddons
+    - kservice
+    - sonnet
+    - ktextwidgets
+    - kglobalaccel
+    - attica
+    - kxmlgui
+    - solid
+    - kbookmarks
+    - kjobwidgets
+    - phonon
+    - phonon-gstreamer
+    - knotifications
+    - gpgmepp
+    - kwallet
+    - kio
+    - knewstuff
+    - breeze-icons
+    - kactivities
+    - kdeclarative
+    - plasma-framework
+type: git
+url: http://anongit.kde.org/okular
+buildsystem: cmake
+buildoptions: '-DCMAKE_INSTALL_PREFIX:PATH=/opt/usr -DKDE_INSTALL_SYSCONFDIR=/opt/etc -DBUILD_TESTING=OFF'
+dependencies:
+  - cpan:
+      build:
+        buildsystem: custom
+        buildoptions: cpan URI::Escape
+      depname: cpan
+      source:
+        type: none
+        url: ''
