@@ -44,6 +44,10 @@ frameworks:
     - kpackage
     - kdeclarative
     - plasma-framework
+    - kjs
+    - kparts
+    - threadweaver
+    - khtml
 type: git
 url: http://anongit.kde.org/okular
 buildsystem: cmake
