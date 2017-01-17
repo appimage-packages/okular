@@ -73,7 +73,7 @@ dependencies:
   - exiv2:
       build:
         buildsystem: make
-        insource: false
+        insource: true
         buildoptions: '--disable-static'
       depname: exiv2-0.25
       source:
