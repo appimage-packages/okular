@@ -76,5 +76,5 @@ dependencies:
         buildoptions: ''
       depname: exiv2-0.25
       source:
-        type: git
+        type: gz
         url: 'http://www.exiv2.org/exiv2-0.25.tar.gz'

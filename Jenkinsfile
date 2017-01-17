@@ -35,7 +35,7 @@ node('linux') {
             extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'appimage-template']], submoduleCfg: [], \
             userRemoteConfigs: [[url: 'https://github.com/appimage-packages/appimage-template']]]
             checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, \
-            extensions: [[$class: 'CleanBeforeCheckout'],[$class: 'RelativeTargetDirectory', relativeTargetDir: 'okular']], submoduleCfg: [], userRemoteConfigs: [[url: 'https://anongit.kde.org/okular']]]
+            extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'okular']], submoduleCfg: [], userRemoteConfigs: [[url: 'https://anongit.kde.org/okular']]]
        }
         stage( 'Setup' ) {
             sh 'bundle install'
