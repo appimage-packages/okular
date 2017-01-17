@@ -70,10 +70,11 @@ dependencies:
       source:
         type: none
         url: ''
-  - libexiv2:
+  - exiv2:
       build:
         buildsystem: make
-        buildoptions: ''
+        insource: false
+        buildoptions: '--disable-static'
       depname: exiv2-0.25
       source:
         type: gz
