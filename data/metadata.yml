@@ -2,6 +2,7 @@ name: okular
 packages:
   - build-essential
   #app specifc
+  - libgif-dev
 frameworks:
   build_kf5: true
   frameworks:
