@@ -3,6 +3,9 @@ packages:
   - build-essential
   #app specifc
   - libgif-dev
+  - libspectre-dev
+  - libchm-dev
+  - libepub-dev
 frameworks:
   build_kf5: true
   frameworks:
@@ -49,6 +52,10 @@ frameworks:
     - kparts
     - threadweaver
     - khtml
+    - libkexiv2
+    - kdegraphics-mobipocket
+    - qca
+    - kpty
 type: git
 url: http://anongit.kde.org/okular
 buildsystem: cmake
