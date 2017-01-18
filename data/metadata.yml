@@ -73,7 +73,7 @@ dependencies:
   - exiv2:
       build:
         buildsystem: cmake
-        buildoptions: ''
+        buildoptions: '-DCMAKE_INSTALL_PREFIX:PATH=/opt/usr'
       depname: exiv2-0.25
       source:
         type: gz
