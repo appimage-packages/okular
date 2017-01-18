@@ -72,9 +72,8 @@ dependencies:
         url: ''
   - exiv2:
       build:
-        buildsystem: make
-        insource: true
-        buildoptions: '--disable-static'
+        buildsystem: cmake
+        buildoptions: ''
       depname: exiv2-0.25
       source:
         type: gz
