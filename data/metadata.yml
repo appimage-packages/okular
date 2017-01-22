@@ -6,7 +6,6 @@ packages:
   - libspectre-dev
   - libchm-dev
   - libepub-dev
-  - libexiv2-dev
 frameworks:
   build_kf5: true
   frameworks:
