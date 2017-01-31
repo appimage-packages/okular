@@ -38,9 +38,6 @@ end
 unless Dir.exist?('appimage')
   Dir.mkdir('appimage')
 end
-unless Dir.exist?('out')
-  Dir.mkdir('out')
-end
 builder.run = [CI::Build.new(project)]
 builder.cmd = %w[bash -c /in/setup.sh]
 builder.create_container(project)
