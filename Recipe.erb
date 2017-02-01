@@ -122,7 +122,7 @@ export KDE_FORK_SLAVES=1
 export GST_PLUGIN_PATH=\$HERE/lib
 export GST_PLUGIN_SCANNER=\$HERE/bin
 
-<%= name %> $@
+<%= binary %> $@
 EOF
 chmod +x AppRun
 mv <%= name %> ./usr/bin/
